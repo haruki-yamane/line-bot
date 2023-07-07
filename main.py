@@ -84,11 +84,11 @@ def get_weather_from_location(original_location):
 @handler.add(MessageEvent, message=LocationMessage)
 def handle_location(event):
     text = event.message.address
-    result = get_weather_from_location(text)
+    #result = get_weather_from_location(text)
     line_bot_api.reply_message(
         event.reply_token,
         [
-        TextSendMessage(text=result)
+        TextSendMessage(text)
         ]
     )
 
