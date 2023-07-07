@@ -31,5 +31,6 @@ def get_weather_from_location(original_location):
 
   result = [('{0[0]}: {0[1]}, {0[2]}°C'.format(weather_info[i])) for i in range(8)]
   result = ('{}\nの今日の天気は\n'.format(original_location) + '\n'.join(result) + '\nです。')
+  result1 = "hogehoge"
 
-  return result
+  return result1
