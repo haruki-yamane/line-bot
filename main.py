@@ -55,7 +55,9 @@ def handle_location(event):
     result = sc.get_weather_from_location(text)
     line_bot_api.reply_message(
         event.reply_token,
+        [
         TextSendMessage(text=result)
+        ]
     )
 
 if __name__ == "__main__":
