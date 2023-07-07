@@ -66,7 +66,7 @@ def get_weather_from_location(original_location):
 
   for each in content[1:]:
     info.append(each.get_text().strip('\n'))
-
+  
   # 時間
   time = info[:8]
   # 天気
